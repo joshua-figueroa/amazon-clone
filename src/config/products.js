@@ -35,4 +35,25 @@ export default [
         price: 139.99,
         rating: 4.8,
     },
+    {
+        id: 6,
+        title: "AMD Ryzen 7 3700X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith Prism LED Cooler",
+        image: "https://images-na.ssl-images-amazon.com/images/I/717Di3DGIbL._AC_SX569_.jpg",
+        price: 289.99,
+        rating: 4.8,
+    },
+    {
+        id: 7,
+        title: "USB C Hub Multiport Adapter - 7 in 1 Portable Space Aluminum Dongle",
+        image: "https://images-na.ssl-images-amazon.com/images/I/71m8FtAfpjL._AC_SX569_.jpg",
+        price: 24.99,
+        rating: 4.6,
+    },
+    {
+        id: 8,
+        title: "DualShock 4 Wireless Controller for PlayStation 4 - Midnight Blue",
+        image: "https://images-na.ssl-images-amazon.com/images/I/81wx5gvczgL._SX522_.jpg",
+        price: 64.99,
+        rating: 4.6,
+    },
 ];
