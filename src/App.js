@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-empty-pattern */
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import "./App.css";
+import { Navbar } from "./components";
+import { Home, Checkout, Login } from "./pages";
+import { useStateValue } from "./util/StateProvider";
+import { auth } from "./util/firebase";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [{}, dispatch] = useStateValue();
+
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged((authUser) => {
+            dispatch({
+                type: "SET_USER",
+                user: authUser ? authUser : null,
+            });
+        });
+
+        return () => {
+            unsubscribe();
+        };
+    }, []);
+
+    return (
+        <Router>
+            <div className="App">
+                <Switch>
+                    <Route path="/checkout">
+                        <Navbar />
+                        <Checkout />
+                    </Route>
+                    <Route path="/login">
+                        <Login />
+                    </Route>
+                    <Route path="/">
+                        <Navbar />
+                        <Home />
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
+    );
 }
 
 export default App;

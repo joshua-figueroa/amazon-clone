@@ -1,0 +1,21 @@
+.checkout {
+    display: flex;
+    background-color: white;
+}
+
+.checkout__ad {
+    width: 100%;
+}
+
+.checkout__empty {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.checkout__items {
+    padding: 15px 20px;
+}
+
+.checkout__items .checkoutItem:first-of-type {
+    margin-top: 15px !important;
+}

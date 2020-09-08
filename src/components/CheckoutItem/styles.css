@@ -1,0 +1,73 @@
+.checkoutItem {
+    display: flex;
+    margin-top: 20px;
+}
+
+.checkoutItem img {
+    width: 180px;
+    object-fit: contain;
+}
+
+.checkoutItem__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.checkoutItem__title {
+    margin-bottom: 10px;
+}
+
+.checkoutItem__price {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #b12704;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 3px;
+}
+
+.checkoutItem__price span {
+    font-size: 15px;
+    color: #555;
+}
+
+.checkoutItem__rating {
+    width: fit-content;
+    margin-bottom: 3px;
+}
+
+.checkoutItem__rating .MuiSvgIcon-root {
+    color: #fdcc0d;
+}
+
+.checkoutItem__info button {
+    background-image: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    background-color: #f0c14b;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    width: fit-content;
+    padding: 1px 8px;
+    outline: 0;
+}
+
+.checkoutItem__info button:hover {
+    background-image: linear-gradient(to bottom, #f5d78e, #eeb933);
+}
+
+.checkoutItem__info button:active {
+    box-shadow: rgb(245, 132, 66) 0 0 8px;
+    border: 1px solid rgb(245, 132, 66);
+}
+
+.checkoutItem__tooltip {
+    font-weight: 600;
+    font-family: "Amazon Ember", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}

@@ -1,0 +1,39 @@
+.home {
+    background-color: rgb(234, 237, 237);
+}
+
+.home__image {
+    width: 100%;
+}
+
+.home__banner {
+    mask-image: linear-gradient(to bottom, #000000ff, #00000000);
+    z-index: -1;
+    margin-bottom: -315px;
+}
+
+.arrow {
+    position: absolute;
+    top: 20%;
+    color: #131921;
+    z-index: 1;
+    width: 5rem !important;
+    height: 5rem !important;
+    cursor: pointer;
+}
+
+.arrow-prev {
+    left: 0;
+}
+
+.arrow-next {
+    right: 0;
+}
+
+.home__row {
+    display: flex;
+    z-index: 1;
+    position: relative;
+    margin: 0 5px;
+    flex-wrap: wrap;
+}
