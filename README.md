@@ -8,4 +8,4 @@ ReactJS, Firebase
 
 ### Deployment
 
-This web application is hosted on Google Firebase. Check it out here 👉🏽 [Netflix Clone](https://clone-b70cc.firebaseapp.com/)
+This web application is hosted on Google Firebase. Check it out here 👉🏽 [Amazon Clone](https://clone-b70cc.firebaseapp.com/)
