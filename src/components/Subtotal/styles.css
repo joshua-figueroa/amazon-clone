@@ -10,10 +10,9 @@
 .subtotal {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 300px;
-    height: 105px;
-    padding: 10px;
+    height: 120px;
+    padding: 14px 18px;
     margin-right: 10px;
     margin-top: 10px;
     background-color: #f3f3f3;
@@ -23,6 +22,10 @@
 
 .subtotal__small {
     margin-left: -3px;
+}
+
+.subtotal p {
+    font-size: 17px;
 }
 
 .subtotal button {
@@ -36,8 +39,11 @@
     border-radius: 3px;
     text-align: center;
     cursor: pointer;
-    padding: 3px 8px;
+    padding: 6px 10px;
     outline: 0;
+    width: 100%;
+    font-size: 13px;
+    margin-top: 3px;
 }
 
 .subtotal button:hover {

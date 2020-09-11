@@ -65,6 +65,14 @@
 
 .product__tooltip {
     font-weight: 600;
-    font-family: "Amazon Amber", Arial, Helvetica, sans-serif;
+    font-family: "Amazon Ember", Arial, Helvetica, sans-serif;
     font-size: 14px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 730px) {
+    .product {
+        min-width: 100%;
+    }
 }

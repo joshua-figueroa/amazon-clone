@@ -22,11 +22,10 @@ export default [
     },
     {
         id: 4,
-        title:
-            "AmazonBasics RJ45 Cat 7 High-Speed Gigabit Ethernet Patch Internet Cable, 10Gbps, 600MHz - White, 30-Foot",
-        image: "https://images-na.ssl-images-amazon.com/images/I/81GuP2neIFL._AC_SX679_.jpg",
-        price: 9.49,
-        rating: 4.8,
+        title: "Arduino Nano [A000005]",
+        image: "https://images-na.ssl-images-amazon.com/images/I/71%2BvvX%2BVCWL._AC_SL1500_.jpg",
+        price: 19.9,
+        rating: 4.7,
     },
     {
         id: 5,
@@ -37,9 +36,9 @@ export default [
     },
     {
         id: 6,
-        title: "AMD Ryzen 7 3700X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith Prism LED Cooler",
-        image: "https://images-na.ssl-images-amazon.com/images/I/717Di3DGIbL._AC_SX569_.jpg",
-        price: 289.99,
+        title: "Apple Watch Series 5 (GPS, 44mm) - Gold Aluminum Case with Pink Sport Band",
+        image: "https://images-na.ssl-images-amazon.com/images/I/71H8iifAnzL._AC_SL1500_.jpg",
+        price: 499.99,
         rating: 4.8,
     },
     {

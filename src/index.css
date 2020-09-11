@@ -21,8 +21,16 @@
     box-sizing: border-box;
 }
 
-* a {
+html {
+    scroll-behavior: smooth;
+}
+
+a {
     outline: 0;
+}
+
+button {
+    font-family: "Amazon Ember", Arial, Helvetica, sans-serif;
 }
 
 body {

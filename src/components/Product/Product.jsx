@@ -1,7 +1,7 @@
 /* eslint-disable no-empty-pattern */
 import React from "react";
 import { Tooltip } from "@material-ui/core";
-import ObjectID from "bson-objectid";
+import { v4 as uuidv4 } from "uuid";
 
 import "./styles.css";
 import StarRating from "../../util/rating";
@@ -14,7 +14,7 @@ export default function Product({ title, price, rating, image }) {
         dispatch({
             type: "ADD_TO_BASKET",
             item: {
-                id: ObjectID(),
+                id: uuidv4(),
                 title,
                 image,
                 price,

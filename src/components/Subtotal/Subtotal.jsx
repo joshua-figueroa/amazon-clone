@@ -2,14 +2,17 @@ import React from "react";
 import CurrencyFormat from "react-currency-format";
 import { FormControlLabel, Checkbox } from "@material-ui/core";
 import { CheckBoxOutlineBlank, CheckBox } from "@material-ui/icons";
+import { useHistory } from "react-router-dom";
 
 import "./styles.css";
 import { useStateValue } from "../../util/StateProvider";
 
 export default function Subtotal() {
-    const [{ basket }] = useStateValue();
+    const [{ basket, user }] = useStateValue();
+    const history = useHistory();
 
     const getBasketTotal = (n) => n?.reduce((amount, item) => item.price + amount, 0);
+    const handleCheckout = () => history.push(`/${user ? "payment" : "login"}`);
 
     return (
         <div className="subtotal">
@@ -36,8 +39,9 @@ export default function Subtotal() {
                 displayType="text"
                 prefix="$"
                 thousandSeparator
+                fixedDecimalScale
             />
-            <button>Proceed to Checkout</button>
+            <button onClick={handleCheckout}>Proceed to Checkout</button>
         </div>
     );
 }

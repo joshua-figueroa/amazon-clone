@@ -17,8 +17,10 @@ export default function Navbar() {
         }
     };
 
+    const splitter = (str) => str?.split("@")[0];
+
     return (
-        <nav className="header">
+        <nav className="header" id="top">
             <Link to="/">
                 <img className="header__logo" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="" />
             </Link>
@@ -31,7 +33,7 @@ export default function Navbar() {
             <div className="header__nav">
                 <Link to={!user && "/login"} className="header__link">
                     <div className="header__option" onClick={handleUser}>
-                        <span className="header__optionLine1">Hello {user?.email}</span>
+                        <span className="header__optionLine1">Hello {user ? splitter(user?.email) : "Guest"}</span>
                         <span className="header__optionLine2">Sign {user ? "Out" : "In"}</span>
                     </div>
                 </Link>
